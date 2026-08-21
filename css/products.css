@@ -1,0 +1,37 @@
+.products {}
+
+
+
+.products-title {}
+
+
+
+
+
+.products-list {}
+
+.products-iteam {
+    background-color: #fafafa;
+}
+
+.products-pic {}
+
+.products-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.products-type {
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.products-price {
+    font-weight: 600;
+    background-color: #fafafa;
+}
