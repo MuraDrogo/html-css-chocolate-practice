@@ -2,15 +2,34 @@
 
 .made-title {}
 
+.made-left-side{
+    border-radius: 16px;
+    overflow: hidden;
+}
 .made-ill {}
 
+.made-wrapper{
+    display: flex;
+    gap: 20px;
+}
 .made-caption {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
-
+    max-width: 350px;
+    margin-bottom: 28px;
+}
+.made-right-side{
+    border-radius: 15px;
+    padding: 32px;
+    width: 516px;
+    background-color: #fff;
+}
+.made-list {
 }
 
-.made-list {}
+/* ВСІ КРІМ ОСТАТНЬОГО ЕЛЕМЕНТА */
 
-.made-iteam {}
+.made-iteam:not(:last-child) {
+    margin-bottom: 24px;
+}
