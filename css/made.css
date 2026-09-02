@@ -33,3 +33,18 @@
 .made-iteam:not(:last-child) {
     margin-bottom: 24px;
 }
+.made-iteam{
+    display: flex;
+    gap: 8px;
+}
+.made-iteam::before{
+    content: '';
+    flex-shrink: 0;
+    display: block;
+    margin-top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #eceded;
+    background-color: #4c4c4c;
+}

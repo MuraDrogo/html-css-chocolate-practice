@@ -25,8 +25,23 @@
     border-radius: 15px;
     padding: 28px 24px;
     width: calc((100% - 32px * 3) / 4);
+    position: relative;
+}
+.ingredients-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:14px;
+    right: 14px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
 }
 
+.ingredients-icon {
+
+}
 .ingridiens-ill {
     margin-bottom: 30px;
 }
