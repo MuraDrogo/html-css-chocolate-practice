@@ -30,7 +30,10 @@
 .footer-wrapper{
 
 }
-.contacts-list {}
+.contacts-list {
+    transition: 300ms ease-out;
+    transition-property: color;
+}
 
 .contacts-item:not(:last-child) {
     margin-bottom: 4px;
@@ -38,6 +41,8 @@
 
 .contacts-link {
     color: #fff;
+    transition: 300ms ease-out;
+    transition-property: color;
 }
 .contacts-link:hover ,.contacts-link:focus{
     color: #FD9222;
@@ -59,6 +64,8 @@
     padding: 11px 0;
     font-weight: 500;
     color: #fff;
+    transition: 300ms ease-out;
+    transition-property: color;
 }
 .footer-menu-link:hover,
 .footer-menu-link:focus {

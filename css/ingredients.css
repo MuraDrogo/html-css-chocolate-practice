@@ -39,8 +39,11 @@
     background-color: transparent;
 }
 
-.ingredients-icon {
-
+.ingredients-items:nth-child(2n) .ingredients-icon {
+    color: #fd9222;
+}
+.ingredients-items:nth-child(2n + 1) .ingredients-icon {
+    color: #fafafa;
 }
 .ingridiens-ill {
     margin-bottom: 30px;

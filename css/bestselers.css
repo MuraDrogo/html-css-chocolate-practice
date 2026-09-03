@@ -12,14 +12,44 @@
 
 .bestsellers-iteam {
     width: calc((100% - 16px * 2) / 3);
-    background-color: #fff;
+    border-radius: 0 0 16px 16px;
+    transition: 300ms ease-out;
+    transition-property: box-shadow;
 }
-
+.bestsellers-iteam:hover{
+    box-shadow: 0 4px 10px 0 rgba(30, 24, 35, 0.2);
+}
+.bestsellers-thumb{
+    position: relative;
+    /* OVERFLOW НАДАЄ ЗНАЧЕННЯ ВСЕ ЩО ВИХОДИТЬ ЗА РАМКУ БУДЕ ПРИХОВАНЕ */
+    overflow: hidden; 
+}
 .bestsellers-ill {
     border-radius: 16px 16px 0 0;
 }
-
+.overlay{
+    position: absolute;
+    display: flex;
+    transform: translateY(101%);
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 16px 16px 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fafafa;
+    backdrop-filter: blur(16px);
+    background-image: linear-gradient(164.64deg, rgba(253, 253, 255, 0.1) 1.87%, rgba(8, 2, 21, 0) 111%);
+    transition: 300ms ease-out;
+    transition-property: transform;
+}
+.bestsellers-iteam:hover .overlay{
+    transform: translateY(0);
+}
 .bestsellers-caption {
+    background-color: #fafafa;
     padding: 28px;
     font-weight: 600;
     font-size: 18px;
@@ -28,5 +58,5 @@
     text-align: center;
     border: 1px solid rgba(17, 17, 17, 0.7);
     border-top: none;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 16px 16px;
 }

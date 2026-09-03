@@ -103,17 +103,32 @@ img{
     height: 100%;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 10px;
+    transition: 300ms ease-out;
+    transition-property: border-color;
 }
+
 .socials-light .socials-link{
-    background-color: #fafafa;
+    border-color:rgba(255, 255, 255, 0.1) ;
+}
+.socials-light .socials-icon{
+    color: #fff;
 }
 .socials-link:hover , .socials-link:focus{
     border: 1px solid rgba(253, 146, 34, 0.1);
     border-radius: 10px;
 }
-
-.socials-icon {}
-
+/* ЗМІНА КОЛЬРУ ІКОНКИ  SVG */
+.socials-icon {
+    color: #111111;
+    transition: 300ms ease-out;
+    transition-property: color,border-color,;
+    }
+.socials-link:hover .socials-icon{
+    color: #fd9222;
+}
+.socials-link:focus .socials-icon {
+    color: #fd9222;
+}
 /* BUTTON */
 
 .btn {
@@ -122,6 +137,8 @@ img{
     background-color: transparent;
     border: 1px solid transparent;
     font-weight: 600;
+    transition: 300ms ease-out;
+    transition-property: color,border-color,background-color;
 }
 
 .btn-filled {
@@ -129,7 +146,7 @@ img{
     background: #fd9222;
 }
 .btn-filled:hover,.btn-filled:focus{
-    background: rgba(253, 146, 34, 0.1);
+    background-color: rgba(253, 146, 34, 0.1);
     color: #fd9222;
 }
 .btn-outlined {
